@@ -8,6 +8,8 @@ let descricaoClasse = document.querySelectorAll(".characters-statblock");
 let nomes = Array.from(nomeInterno).map(el => el.textContent.trim());
 let descricao = Array.from(descricaoClasse).map(el => el.textContent.trim());
 
+// Transforma os arrays 'nomes' e 'descricao' em um único array de objetos,
+// em que cada objeto tem o nome e a descrição correspondentes pelo índice.
 let classes = nomes.map((nome, i) => ({
     nome: nome,
     descricao: descricao[i]
